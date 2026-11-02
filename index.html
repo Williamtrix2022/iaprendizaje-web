@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <title>IAprendizaje · Aprendizaje que se demuestra</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#073b32">
-  <meta name="description" content="IAprendizaje conecta resultados de aprendizaje, actividades, evidencias y evaluación explicable en una sola plataforma para estudiantes, docentes y coordinación.">
+  <meta name="theme-color" content="#173b33">
+  <meta name="description" content="IAprendizaje mide resultados de aprendizaje: la IA califica con evidencia y el docente verifica. Del plan de medición a la evidencia lista para acreditación.">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,14 +17,14 @@
 
   <header class="top">
     <a class="brand" href="#inicio" aria-label="IAprendizaje, inicio">
-      <span class="brand-mark" aria-hidden="true">IA</span>
-      <span>Aprendizaje</span>
+      <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h18v18H3z" fill="#2c8a2e"/><path d="M7 17V7l5 5M12 12l5 5V7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <span><b>IA</b>prendizaje</span>
     </a>
     <nav aria-label="Principal">
-      <a href="#roles">Para quién</a>
-      <a href="#flujo">Cómo funciona</a>
-      <a href="#ia">IA responsable</a>
-      <a href="#aventura">Aventura</a>
+      <a href="#problema">El reto</a>
+      <a href="#proceso">Cómo funciona</a>
+      <a href="#roles">Para cada rol</a>
+      <a href="#confianza">Confianza</a>
       <a href="#estado">Estado</a>
     </nav>
   </header>
@@ -33,75 +33,142 @@
     <!-- HERO -->
     <section class="hero" id="inicio">
       <div class="hero-copy">
-        <h1>Aprendizaje que se demuestra</h1>
-        <p class="lead">IAprendizaje une los resultados de aprendizaje, las actividades, la evidencia y la evaluación explicable. Cada nota queda ligada a lo que el estudiante realmente hizo.</p>
+        <h1>Aprendizaje que se <em>demuestra</em></h1>
+        <p class="lead">Medición de resultados de aprendizaje: la IA califica con evidencia y el docente verifica.</p>
         <div class="actions">
-          <a class="btn primary" href="#flujo">Ver cómo funciona</a>
+          <a class="btn primary" href="#proceso">Ver cómo funciona</a>
           <a class="btn ghost" href="#roles">Elegir mi rol</a>
         </div>
       </div>
-      <div class="hero-scene" aria-hidden="false">
-        <svg class="caiman" id="caiman" viewBox="0 0 360 300" role="img" aria-label="Caimanito, la mascota de IAprendizaje, asomado sobre el agua">
-          <defs>
-            <clipPath id="above"><rect x="0" y="0" width="360" height="206"/></clipPath>
-          </defs>
-          <ellipse cx="180" cy="238" rx="150" ry="26" fill="#d3e895" opacity=".55"/>
-          <g clip-path="url(#above)">
-            <g class="bob">
-              <path d="M70 200c-26 4-44-6-56-20 22-2 38 2 54 10z" fill="#2da96b" stroke="#143f37" stroke-width="5" stroke-linejoin="round"/>
-              <path d="M138 70l10-24 12 22M164 66l12-22 10 24" fill="#bdeb78" stroke="#143f37" stroke-width="5" stroke-linejoin="round"/>
-              <ellipse cx="190" cy="168" rx="124" ry="108" fill="#37bd78" stroke="#143f37" stroke-width="6"/>
-              <ellipse cx="190" cy="186" rx="86" ry="52" fill="#62d590" stroke="#143f37" stroke-width="5"/>
-              <ellipse cx="160" cy="176" rx="7" ry="9" fill="#143f37"/>
-              <ellipse cx="220" cy="176" rx="7" ry="9" fill="#143f37"/>
-              <path d="M163 204q27 22 54 0" fill="none" stroke="#143f37" stroke-width="5" stroke-linecap="round"/>
-              <g>
-                <ellipse cx="140" cy="106" rx="30" ry="35" fill="#f8f6e9" stroke="#143f37" stroke-width="6"/>
-                <ellipse cx="240" cy="106" rx="30" ry="35" fill="#f8f6e9" stroke="#143f37" stroke-width="6"/>
-                <circle class="pupil" id="pupilL" cx="140" cy="108" r="11" fill="#143f37"/>
-                <circle class="pupil" id="pupilR" cx="240" cy="108" r="11" fill="#143f37"/>
-              </g>
-            </g>
-          </g>
-          <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stop-color="#25a965" stop-opacity=".95"/>
-            <stop offset="1" stop-color="#25a965" stop-opacity="0"/>
-          </linearGradient>
-          <path class="wave" d="M-30 206c30-14 60 14 90 0s60-14 90 0 60 14 90 0 60-14 90 0 60 14 90 0v94H-30z" fill="url(#water)"/>
-          <path d="M-30 214c30-14 60 14 90 0s60-14 90 0 60 14 90 0 60-14 90 0 60 14 90 0" fill="none" stroke="#143f37" stroke-width="4" stroke-linecap="round"/>
+
+      <div class="hero-art" aria-hidden="false">
+        <span class="cap cap-a"></span>
+        <span class="cap cap-b"></span>
+        <span class="cap cap-c"></span>
+        <svg class="caiman" id="caiman" viewBox="0 30 360 210" role="img" aria-label="Caimanito, la mascota de IAprendizaje">
+          <path d="M70 196c-26 4-44-6-56-20 22-2 38 2 54 10z" fill="#1d6a52" stroke="#0f2a24" stroke-width="5" stroke-linejoin="round"/>
+          <path d="M138 70l10-24 12 22M164 66l12-22 10 24" fill="#a9d65a" stroke="#0f2a24" stroke-width="5" stroke-linejoin="round"/>
+          <ellipse cx="190" cy="168" rx="124" ry="108" fill="#1f7a5c" stroke="#0f2a24" stroke-width="6"/>
+          <ellipse cx="190" cy="186" rx="86" ry="52" fill="#3fa27c" stroke="#0f2a24" stroke-width="5"/>
+          <ellipse cx="160" cy="176" rx="7" ry="9" fill="#0f2a24"/>
+          <ellipse cx="220" cy="176" rx="7" ry="9" fill="#0f2a24"/>
+          <path d="M163 204q27 22 54 0" fill="none" stroke="#0f2a24" stroke-width="5" stroke-linecap="round"/>
+          <ellipse cx="140" cy="106" rx="30" ry="35" fill="#f4f6ec" stroke="#0f2a24" stroke-width="6"/>
+          <ellipse cx="240" cy="106" rx="30" ry="35" fill="#f4f6ec" stroke="#0f2a24" stroke-width="6"/>
+          <circle class="pupil" id="pupilL" cx="140" cy="108" r="11" fill="#0f2a24"/>
+          <circle class="pupil" id="pupilR" cx="240" cy="108" r="11" fill="#0f2a24"/>
+          <path class="spark" d="M318 64l5 13 13 5-13 5-5 13-5-13-13-5 13-5z" fill="#a9d65a"/>
         </svg>
+        <span class="cap cap-d"></span>
       </div>
     </section>
 
-    <!-- PROBLEMA -->
-    <section class="band intro">
-      <div class="wrap two">
-        <h2>Una nota sola no dice qué aprendió alguien</h2>
-        <div class="prose">
-          <p>En muchos cursos el resultado de aprendizaje está escrito en el plan, la actividad vive en otra herramienta y la nota llega sin explicación. Docentes y coordinación terminan reconstruyendo a mano qué se logró.</p>
-          <p>IAprendizaje conserva el hilo completo: del resultado esperado a la evidencia entregada, y de ahí a una evaluación que el estudiante puede leer, discutir y usar para mejorar.</p>
-        </div>
+    <!-- RETO -->
+    <section class="section" id="problema">
+      <div class="wrap center">
+        <h2>¿Cómo demuestra su programa que cada estudiante alcanzó sus RAP?</h2>
+        <ul class="cards3">
+          <li>
+            <span class="badge-ic"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="16" rx="2"/><path d="M5 10h14M5 15h14M11 4v16"/></svg></span>
+            <p>Hojas de cálculo</p>
+          </li>
+          <li>
+            <span class="badge-ic"><svg viewBox="0 0 24 24"><path d="M12 4v16M7 20h10M5 7h14M5 7l-3 7a3.2 3.2 0 006 0zM19 7l-3 7a3.2 3.2 0 006 0z"/></svg></span>
+            <p>Rúbricas a criterio</p>
+          </li>
+          <li>
+            <span class="badge-ic"><svg viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7zM14 3v4h4"/><circle cx="12" cy="14" r="2.5"/><path d="M14 16l3 3"/></svg></span>
+            <p>Evidencia dispersa</p>
+          </li>
+        </ul>
+        <p class="note">Los resultados de aprendizaje (RAP) se escriben en un documento, la evidencia vive en otro lugar y nadie puede mostrar el hilo completo cuando llega la acreditación.</p>
+      </div>
+    </section>
+
+    <!-- PROCESO -->
+    <section class="section soft" id="proceso">
+      <div class="wrap">
+        <h2>De la rúbrica a la evidencia</h2>
+        <p class="sub"><strong>Caimanito IA</strong> califica con evidencia. El docente verifica y ajusta.</p>
+        <ol class="steps">
+          <li><span class="ring"><b>1</b></span><h3>Planifica</h3><p>Momentos, RAP y rúbricas aprobadas por acta.</p></li>
+          <li><span class="ring"><b>2</b></span><h3>Genera</h3><p>La IA redacta la actividad con los materiales del curso.</p></li>
+          <li><span class="ring"><b>3</b></span><h3>Evalúa</h3><p>La IA califica con la rúbrica y cita la evidencia.</p></li>
+          <li><span class="ring"><b>4</b></span><h3>Demuestra</h3><p>Medición por RAP y momento, lista para acreditación.</p></li>
+        </ol>
       </div>
     </section>
 
     <!-- ROLES -->
-    <section class="roles" id="roles">
+    <section class="section" id="roles">
       <div class="wrap">
-        <h2>Cada rol ve lo que necesita, y solo eso</h2>
-        <div class="tabs" role="tablist" aria-label="Roles">
-          <button role="tab" id="tab-est" aria-controls="panel-est" aria-selected="true">Estudiante</button>
-          <button role="tab" id="tab-doc" aria-controls="panel-doc" aria-selected="false" tabindex="-1">Docente</button>
-          <button role="tab" id="tab-coo" aria-controls="panel-coo" aria-selected="false" tabindex="-1">Coordinación</button>
+        <h2 class="center">Valor para cada rol</h2>
+        <div class="role-tabs" role="tablist" aria-label="Roles">
+          <button role="tab" id="tab-coo" aria-controls="panel-coo" aria-selected="true">
+            <span class="badge-ic"><svg viewBox="0 0 24 24"><path d="M3 9l9-5 9 5M5 10v8M9 10v8M15 10v8M19 10v8M3 20h18"/></svg></span>
+            <strong>Coordinación</strong>
+            <span>Programa, RAP y plan, en un lugar. Medición por momento, trazable.</span>
+          </button>
+          <button role="tab" id="tab-doc" aria-controls="panel-doc" aria-selected="false" tabindex="-1">
+            <span class="badge-ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M9 20l3-4 3 4"/></svg></span>
+            <strong>Docentes</strong>
+            <span>La IA prepara y califica; usted verifica. Ve el nivel de la IA y decide.</span>
+          </button>
+          <button role="tab" id="tab-est" aria-controls="panel-est" aria-selected="false" tabindex="-1">
+            <span class="badge-ic"><svg viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5zM6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg></span>
+            <strong>Estudiantes</strong>
+            <span>Ven su nota y su evidencia. Avanzan paso a paso en su ruta.</span>
+          </button>
         </div>
 
-        <div class="panel" role="tabpanel" id="panel-est" aria-labelledby="tab-est">
+        <div class="panel" role="tabpanel" id="panel-coo" aria-labelledby="tab-coo">
           <div class="panel-text">
-            <h3>Entregar, entender y mejorar</h3>
-            <p>Responde actividades, guarda avances, adjunta evidencia privada y entrega. Cuando el docente publica la revisión, ve su nota, su nivel de dominio y la explicación criterio por criterio.</p>
+            <h3>Cada momento, con sus RAP y su meta</h3>
             <ul>
-              <li>Mi práctica: misiones propias o un trabajo subido para feedback formativo privado.</li>
-              <li>Caimanito, el tutor que explica el feedback ya publicado.</li>
-              <li>Progreso por resultado de aprendizaje, con comparación curricular.</li>
+              <li>Organiza programas, áreas, etapas, materias, grupos y asignaciones.</li>
+              <li>Define RAP, rúbricas y escalas, y publica el plan de medición.</li>
+              <li>Carga documentos y revisa las propuestas de RAP antes de aceptarlas.</li>
+              <li>Informes de diagnóstico agregado, sin exponer el trabajo privado de cada estudiante.</li>
+            </ul>
+          </div>
+          <div class="mock" aria-hidden="true">
+            <div class="mock-bar"><i></i><i></i><i></i></div>
+            <div class="mock-body">
+              <strong>Cobertura del programa, al día</strong>
+              <div class="bars"><span style="height:42%"></span><span style="height:68%"></span><span style="height:55%"></span><span style="height:84%"></span><span style="height:61%"></span></div>
+              <small>Datos sintéticos de demostración</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel" role="tabpanel" id="panel-doc" aria-labelledby="tab-doc" hidden>
+          <div class="panel-text">
+            <h3>Nivel de la IA a la vista; el docente verifica</h3>
+            <ul>
+              <li>Elige RAP, rúbrica, grupo y condiciones. La IA propone la actividad con fuentes del curso.</li>
+              <li>Revisa la actividad y su rúbrica antes de publicarlas a su grupo.</li>
+              <li>Recibe las solicitudes de revisión de sus estudiantes en un solo lugar.</li>
+              <li>Confirma el resultado o pide a la IA una nueva evaluación; ambas versiones quedan en el historial.</li>
+            </ul>
+          </div>
+          <div class="mock" aria-hidden="true">
+            <div class="mock-bar"><i></i><i></i><i></i></div>
+            <div class="mock-body">
+              <strong>Solicitud de revisión</strong>
+              <p class="bubble">«No estoy de acuerdo con el criterio 2: el cuello de botella sí está justificado.»</p>
+              <div class="mock-actions"><span class="on">Confirmar resultado</span><span>Evaluar de nuevo</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel" role="tabpanel" id="panel-est" aria-labelledby="tab-est" hidden>
+          <div class="panel-text">
+            <h3>Mi ruta: cada actividad es un paso del recorrido</h3>
+            <ul>
+              <li>Responde, guarda avances, adjunta evidencia privada y entrega.</li>
+              <li>Ve su nota y la explicación criterio por criterio en cuanto termina la evaluación.</li>
+              <li>Si no está de acuerdo, pide revisión al docente señalando la pregunta o el criterio.</li>
+              <li>Mi práctica: misiones propias y feedback formativo privado con Caimanito.</li>
             </ul>
           </div>
           <div class="mock" aria-hidden="true">
@@ -114,123 +181,53 @@
             </div>
           </div>
         </div>
-
-        <div class="panel" role="tabpanel" id="panel-doc" aria-labelledby="tab-doc" hidden>
-          <div class="panel-text">
-            <h3>Generar con fuentes y decidir al final</h3>
-            <p>Elige el resultado de aprendizaje, la rúbrica, el grupo y las condiciones. La IA propone una actividad apoyada en los documentos del curso; tú la revisas, la regeneras si hace falta y la publicas.</p>
-            <ul>
-              <li>Revisa entregas y agrega tu interpretación antes de publicar la evaluación.</li>
-              <li>Ve únicamente los grupos que tiene asignados.</li>
-              <li>Las versiones publicadas no se reescriben: el historial se conserva.</li>
-            </ul>
-          </div>
-          <div class="mock" aria-hidden="true">
-            <div class="mock-bar"><i></i><i></i><i></i></div>
-            <div class="mock-body">
-              <strong>Actividad propuesta · borrador</strong>
-              <ul class="checks">
-                <li>Fuente citada: Guía de procesos, cap. 2</li>
-                <li>Rúbrica de 4 criterios aplicada</li>
-                <li class="pending">Pendiente: tu revisión</li>
-              </ul>
-              <div class="mock-actions"><span>Regenerar</span><span class="on">Publicar</span></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="panel" role="tabpanel" id="panel-coo" aria-labelledby="tab-coo" hidden>
-          <div class="panel-text">
-            <h3>Configurar el plan y ver el panorama</h3>
-            <p>Organiza programas, áreas, etapas, materias, grupos y asignaciones. Define resultados de aprendizaje y escalas, publica el Plan de Assessment y revisa informes agregados de diagnóstico.</p>
-            <ul>
-              <li>Carga documentos y revisa las propuestas de resultados antes de aceptarlas.</li>
-              <li>Informes por grupo sin exponer el trabajo privado de cada estudiante.</li>
-              <li>Configuración académica partiendo del pensum.</li>
-            </ul>
-          </div>
-          <div class="mock" aria-hidden="true">
-            <div class="mock-bar"><i></i><i></i><i></i></div>
-            <div class="mock-body">
-              <strong>Diagnóstico agregado · Grupo A</strong>
-              <div class="bars"><span style="height:42%"></span><span style="height:68%"></span><span style="height:55%"></span><span style="height:84%"></span><span style="height:61%"></span></div>
-              <small>Datos sintéticos de demostración</small>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
-    <!-- FLUJO -->
-    <section class="flow" id="flujo">
-      <div class="wrap">
-        <h2>Del plan a la evidencia, paso a paso</h2>
-        <ol class="steps">
-          <li><h3>Plan de Assessment</h3><p>Coordinación define resultados de aprendizaje, rúbricas y escalas, y publica el plan.</p></li>
-          <li><h3>Actividad</h3><p>El docente genera una actividad con fuentes del curso, la revisa y la publica a su grupo.</p></li>
-          <li><h3>Evidencia</h3><p>El estudiante responde, guarda avances y adjunta archivos privados antes de entregar.</p></li>
-          <li><h3>Evaluación explicable</h3><p>La nota llega con criterios, justificación y la interpretación del docente.</p></li>
-          <li><h3>Progreso</h3><p>Los resultados se acumulan por resultado de aprendizaje y alimentan los informes.</p></li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- IA -->
-    <section class="ai" id="ia">
+    <!-- CONFIANZA -->
+    <section class="section dark" id="confianza">
       <div class="wrap two">
         <div>
-          <h2>La IA propone; las personas deciden</h2>
-          <p class="lead-sm">La inteligencia artificial acelera el trabajo, pero nunca publica una nota por su cuenta.</p>
+          <h2>La IA cita su evidencia y las personas verifican</h2>
+          <p class="lead-sm">Un resultado automático solo sirve si se puede auditar. Por eso cada paso deja rastro.</p>
         </div>
         <dl class="facts">
-          <div><dt>Con fuentes</dt><dd>La recuperación (RAG) usa solo los documentos autorizados del curso, y cada respuesta indica de dónde salió.</dd></div>
-          <div><dt>Con trazabilidad</dt><dd>Se registran proveedor, versión y regeneraciones. Cambiar de modelo no borra lo anterior.</dd></div>
-          <div><dt>Con honestidad</dt><dd>Si la IA falla o no encuentra fuentes pertinentes, el tutor lo dice en lugar de inventar.</dd></div>
-          <div><dt>Con privacidad</dt><dd>Los docentes no leen las conversaciones privadas del estudiante con el tutor.</dd></div>
+          <div><dt>Con fuentes</dt><dd>La IA usa solo los documentos autorizados del curso y la rúbrica congelada en cada intento.</dd></div>
+          <div><dt>Con revisión humana</dt><dd>El docente aprueba la actividad y su rúbrica antes de publicarlas, y resuelve las solicitudes de revisión.</dd></div>
+          <div><dt>Con historial</dt><dd>Una nueva evaluación no borra la anterior: ambas versiones se conservan.</dd></div>
+          <div><dt>Con honestidad</dt><dd>Si el procesamiento falla, la entrega se conserva y se muestra el fallo. No se inventa un resultado.</dd></div>
+          <div><dt>Con aislamiento</dt><dd>Cada institución está separada; el docente solo ve sus grupos y la evidencia privada sigue privada.</dd></div>
         </dl>
       </div>
     </section>
 
     <!-- AVENTURA -->
-    <section class="adventure" id="aventura">
+    <section class="section" id="aventura">
       <div class="wrap two">
-        <div class="adv-copy">
+        <div>
           <h2>Practicar también es una aventura</h2>
-          <p>Las misiones de Mi práctica se recorren en una ruta con nodos. Sumas XP, subes de nivel cada 300 XP, mantienes una racha diaria y desbloqueas paisajes.</p>
-          <p>Las recompensas reconocen la participación. No modifican las notas del curso.</p>
+          <p class="lead-sm">Las misiones de Mi práctica se recorren en una ruta con nodos. Sumas XP, subes de nivel cada 300 XP, mantienes una racha diaria y desbloqueas paisajes.</p>
+          <p class="lead-sm">Las recompensas reconocen la participación y no modifican las notas del curso.</p>
         </div>
         <div class="route" aria-hidden="true">
           <svg viewBox="0 0 420 220">
-            <path d="M20 170C90 170 90 60 160 60S230 170 300 130 380 50 400 50" fill="none" stroke="#143f37" stroke-width="4" stroke-dasharray="3 12" stroke-linecap="round"/>
-            <circle cx="20" cy="170" r="14" fill="#25a965" stroke="#143f37" stroke-width="4"/>
-            <circle cx="160" cy="60" r="14" fill="#25a965" stroke="#143f37" stroke-width="4"/>
-            <circle cx="300" cy="130" r="14" fill="#d3e895" stroke="#143f37" stroke-width="4"/>
-            <circle cx="400" cy="50" r="14" fill="#f7f8f2" stroke="#143f37" stroke-width="4" stroke-dasharray="4 4"/>
+            <path d="M20 170C90 170 90 60 160 60S230 170 300 130 380 50 400 50" fill="none" stroke="#8bbd3e" stroke-width="4" stroke-dasharray="3 12" stroke-linecap="round"/>
+            <circle cx="20" cy="170" r="14" fill="#2c8a2e" stroke="#173b33" stroke-width="4"/>
+            <circle cx="160" cy="60" r="14" fill="#2c8a2e" stroke="#173b33" stroke-width="4"/>
+            <circle cx="300" cy="130" r="14" fill="#a9d65a" stroke="#173b33" stroke-width="4"/>
+            <circle cx="400" cy="50" r="14" fill="#fff" stroke="#173b33" stroke-width="4" stroke-dasharray="4 4"/>
           </svg>
-          <div class="chips"><span>300 XP por nivel</span><span>Racha diaria</span><span>7 logros</span><span>Paisajes</span></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SEGURIDAD -->
-    <section class="trust">
-      <div class="wrap">
-        <h2>Pensada para instituciones</h2>
-        <div class="trust-grid">
-          <p><strong>Aislamiento por institución.</strong> Cada tenant está separado; la autorización se prueba con otra cuenta y otra institución.</p>
-          <p><strong>Evidencia privada.</strong> Los archivos del estudiante solo los ve quien corresponde, y se escanean antes de usarse.</p>
-          <p><strong>Historial inmutable.</strong> Intentos y versiones publicadas conservan su contenido original.</p>
-          <p><strong>Acceso institucional.</strong> Autenticación con Firebase en producción y membresías por rol.</p>
+          <div class="chips"><span>300 XP por nivel</span><span>Racha diaria</span><span>Logros</span><span>Paisajes</span></div>
         </div>
       </div>
     </section>
 
     <!-- ESTADO -->
-    <section class="status" id="estado">
+    <section class="section soft" id="estado">
       <div class="wrap two">
         <div>
           <h2>Un MVP en construcción</h2>
-          <p>IAprendizaje está en etapa de piloto. Lo que ves aquí funciona con datos sintéticos de un campus de Ingeniería Industrial; no representa notas ni reglas de una institución real.</p>
+          <p>IAprendizaje está en etapa de piloto. Lo que se muestra funciona con datos sintéticos de un campus de Ingeniería Industrial; no representa notas ni reglas de una institución real.</p>
           <p>Las reglas institucionales pendientes se documentan como pendientes y no se asumen.</p>
         </div>
         <div class="stack-box">
@@ -245,14 +242,19 @@
         </div>
       </div>
     </section>
+
+    <!-- CIERRE -->
+    <section class="closing">
+      <div class="wrap closing-in">
+        <a class="brand light" href="#inicio"><svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h18v18H3z" fill="#fff"/><path d="M7 17V7l5 5M12 12l5 5V7" fill="none" stroke="#2c8a2e" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/></svg><span><b>IA</b>prendizaje</span></a>
+        <p class="closing-h">Llevemos su programa a <em>evidencia</em></p>
+      </div>
+    </section>
   </main>
 
   <footer class="foot">
     <div class="wrap foot-in">
-      <div>
-        <a class="brand light" href="#inicio"><span class="brand-mark" aria-hidden="true">IA</span><span>Aprendizaje</span></a>
-        <p>Aprendizaje que se demuestra.</p>
-      </div>
+      <p>Aprendizaje que se demuestra.</p>
       <p class="small">Proyecto en desarrollo. Datos de demostración sintéticos.</p>
     </div>
   </footer>
